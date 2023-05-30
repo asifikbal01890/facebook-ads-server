@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,11 +18,33 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #FFFFFF;
+  background: rgba(18, 20, 29, 1)
+}
+
+.color {
+  color: aqua;
+}
+
+.gradient-btn {
+  background: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
+  border-radius: 5px;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(94.25deg, #5C7FFF 0%, #CB5CFF 100%);
+}
+
+.gradient-btn:active {
+  background: linear-gradient(94.25deg, #0035F5 0%, #A600F5 100%);
+}
+
+.gradient-outline-btn:hover {
+  background: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 1px solid;
+  border-image: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
+  border-image-slice: 1;
 }

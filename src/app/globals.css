@@ -56,6 +56,11 @@ body {
   background-clip: text;
 }
 
+.facebook-border {
+  background: linear-gradient(268.28deg, #FFC947 16.84%, #FC6739 84.26%),
+    linear-gradient(0deg, #FAFAFA, #FAFAFA);
+}
+
 .ellipse-one {
   position: absolute;
   width: 200px;
@@ -74,5 +79,16 @@ body {
   top: 378px;
 
   background: rgba(255, 207, 115, 0.4);
+  filter: blur(177px);
+}
+
+.ellipse-three {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  left: 1492px;
+  top: 577px;
+
+  background: rgba(242, 54, 144, 0.7);
   filter: blur(177px);
 }

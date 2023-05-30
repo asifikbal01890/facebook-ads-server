@@ -1,6 +1,9 @@
 import React from 'react';
 import { Outfit } from 'next/font/google'
 import { MdPlayCircle } from "react-icons/md";
+import Ellipses from '../Ellipses/Ellipses';
+import EllipseTwo from '../Ellipses/EllipseTwo';
+import EllipseThree from '../Ellipses/EllipseThree';
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -10,6 +13,8 @@ const HeroSection = () => {
             <div className={`${outfit.className} text-5xl lg:text-6xl lg:leading-[66px] font-medium`}>
                 <h1>Write better content for your</h1>
                 <h1 className='facebook-color underline'>Facebook Ads</h1>
+                <p className='lg:w-[370px] w-[296px] facebook-border h-1 mx-auto'></p>
+                
             </div>
             <div className='pt-[34px]'>
                 <p className='text-[#FAFAFA]/[0.7]'>Artificial intelligence writting tool helps you create blogs, social media websites and much more.</p>
@@ -18,6 +23,9 @@ const HeroSection = () => {
             <div className='flex justify-center'>
                 <button className='gradient-outline-btn py-[6.5px] px-[38px] mt-[13px] flex items-center gap-[11.8px]'><MdPlayCircle></MdPlayCircle>Watch A Demo</button>
             </div>
+            {/* <Ellipses></Ellipses>
+            <EllipseTwo></EllipseTwo>
+            <EllipseThree></EllipseThree> */}
         </div>
     );
 };

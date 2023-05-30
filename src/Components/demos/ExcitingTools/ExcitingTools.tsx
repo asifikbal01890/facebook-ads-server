@@ -77,8 +77,9 @@ const ExcitingTools = () => {
                 }
             </div>
             <div className='text-center mt-8 lg:mt-[68px]'>
-            <button className='gradient-outline-btn py-[6.5px] px-[38.5px]'>See all 54 available tools</button>
+                <button className='gradient-outline-btn py-[6.5px] px-[38.5px]'>See all 54 available tools</button>
             </div>
+            <p className='h-[1px] border border-[#252835] w-screen mt-[100px]'></p>
         </div>
     );
 };

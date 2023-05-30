@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600&display=swap');
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,13 +18,11 @@
 }
 
 body {
+  font-family: 'Outfit';
   color: #FFFFFF;
   background: rgba(18, 20, 29, 1)
 }
 
-.color {
-  color: aqua;
-}
 
 .gradient-btn {
   background: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
@@ -44,7 +42,37 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  fill: transparent;
   border: 1px solid;
   border-image: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
   border-image-slice: 1;
+}
+
+.facebook-color {
+  background: linear-gradient(268.28deg, #FFC947 16.84%, #FC6739 84.26%),
+    linear-gradient(0deg, #FAFAFA, #FAFAFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ellipse-one {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 722px;
+  top: 151px;
+  background: rgba(159, 54, 242, 0.7);
+  filter: blur(177px);
+}
+
+.ellipse-two {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  left: 26px;
+  top: 378px;
+
+  background: rgba(255, 207, 115, 0.4);
+  filter: blur(177px);
 }

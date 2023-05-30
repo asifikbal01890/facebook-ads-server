@@ -27,7 +27,7 @@ const Results = () => {
                     <p className='text-[#FAFAFA]/[0.7] text-lg mt-[31px]'>AI-Writer is the most accurate content generation platform and writing tool that helps you transform your text into a completely personalized.</p>
                     <button className='gradient-btn font-semibold py-[18px] px-[20.5px] mt-[42px]'>Start 14 Days Free Trial</button>
                 </div>
-                <div className=' mt-12 lg:mt-0'>
+                <div className=' mt-12 lg:mt-0---'>
                     <Image src={imgTwo} alt='' />
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import Customers from '@/Components/demos/Customers/Customers'
+import ExcitingTools from '@/Components/demos/ExcitingTools/ExcitingTools'
 import HeroSection from '@/Components/demos/HeroSection/HeroSection'
 import Results from '@/Components/demos/Results/Results'
 
@@ -8,6 +9,7 @@ export default function Home() {
      <HeroSection></HeroSection>
      <Customers></Customers>
      <Results></Results>
+     <ExcitingTools></ExcitingTools>
     </main>
   )
 }

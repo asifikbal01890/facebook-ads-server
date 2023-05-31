@@ -6,10 +6,10 @@ import Image from 'next/image';
 const navbar = () => {
     const menuContent = <React.Fragment>
         <li className='text-[#FAFAFA]  text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/">Demos</Link></li>
-        <li className='text-[#FAFAFA] font-[Inter] text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/about">About</Link></li>
-        <li className='text-[#FAFAFA] font-[Inter] text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/blog">Blog</Link></li>
-        <li className='text-[#FAFAFA] font-[Inter] text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/pages">Pages</Link></li>
-        <li className='text-[#FAFAFA] font-[Inter] text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/contact">Contact</Link></li>
+        <li className='text-[#FAFAFA] font-[Inter] text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/">About</Link></li>
+        <li className='text-[#FAFAFA] font-[Inter] text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/">Blog</Link></li>
+        <li className='text-[#FAFAFA] font-[Inter] text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/">Pages</Link></li>
+        <li className='text-[#FAFAFA] font-[Inter] text-base font-medium transition-colors ease-in-out hover:text-primary duration-300'><Link href="/">Contact</Link></li>
     </React.Fragment>
     return (
         <div className='z-50'>

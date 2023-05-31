@@ -4,6 +4,7 @@ import HeroSection from '@/Components/demos/HeroSection/HeroSection'
 import Results from '@/Components/demos/Results/Results'
 import MixlandLaouts from './settings/MixlandLaouts'
 import BlogHeadlines from '@/Components/demos/MixlandHelps/BlogHeadlines/BlogHeadlines'
+import CustomersSay from '@/Components/demos/CustomersSay/CustomersSay'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
      <MixlandLaouts>
      <BlogHeadlines></BlogHeadlines>
      </MixlandLaouts>
+     <CustomersSay></CustomersSay>
     </main>
   )
 }

@@ -65,6 +65,10 @@ body {
     linear-gradient(0deg, #FAFAFA, #FAFAFA);
 }
 
+.customer-say-bg {
+  background: linear-gradient(180deg, #171924 0%, rgba(23, 25, 36, 0) 100%);
+}
+
 .ellipse-one {
   position: absolute;
   width: 200px;

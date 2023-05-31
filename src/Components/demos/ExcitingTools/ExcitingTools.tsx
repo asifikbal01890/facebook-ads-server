@@ -63,8 +63,8 @@ const ExcitingTools = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[26px] lg:w-[1294px] mx-5 lg:mx-auto mt-6 lg:mt-[61px]'>
                 {
-                    toolsInfo.map(info =>
-                        <>
+                    toolsInfo.map((info, i) =>
+                        <div key={i}>
                             <div className='flex items-start gap-[17px] bg-[#282A37] rounded-[10px] w-full lg:w-[304px] py-[21px] px-[22px]'>
                                 <Image src={info.logo} alt='' />
                                 <div>
@@ -72,7 +72,7 @@ const ExcitingTools = () => {
                                     <p className='text-sm text-[#FFFFFF]/[0.7]'>{info.describe}</p>
                                 </div>
                             </div>
-                        </>
+                        </div>
                     )
                 }
             </div>

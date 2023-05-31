@@ -48,12 +48,12 @@ const Customers = () => {
                 <h2 className={`${outfit.className} font-medium text-2xl leading-[34px]`}>Trusted by nearly 5000+ paying customers</h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-[77.18px] gap-y-[50.98px] mx-5'>
                     {
-                        images.map(image =>
-                            <>
+                        images.map((image, i) =>
+                            <div key={i}>
                             <div className='flex justify-center'>
                             <Image className='brightness-50' src={image.logo} alt=''/>
                             </div>
-                            </>
+                            </div>
                         )
                     }
                 </div>

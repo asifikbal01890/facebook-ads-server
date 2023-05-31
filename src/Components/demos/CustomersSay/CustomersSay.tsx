@@ -99,7 +99,7 @@ const CustomersSay = () => {
                 </div>
                 <div className='h-fit'>
                     {
-                        customersInfo.slice(6, 8).map((info, i) => <>
+                        customersInfo.slice(6, 8).map((info, i) => <div key={i}>
                             <div className='pl-[22px] pr-[12px] py-[25px] bg-[#FFFFFF] rounded-[5px] text-[#12141D] mb-[27px]'>
                                 <div className='flex items-start justify-between'>
                                     <div className='flex items-center gap-[11px]'>
@@ -116,7 +116,7 @@ const CustomersSay = () => {
                                     <p className='text-[#0EA5E9]'>{info.hashTag}</p>
                                 </div>
                             </div>
-                        </>)
+                        </div>)
                     }
                 </div>
             </div>

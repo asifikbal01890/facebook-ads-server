@@ -44,7 +44,7 @@ const Plans = () => {
             <p className='text-lg text-[#FAFAFA]/[0.7] mt-5'>Choose from our affordable 3 packages</p>
             <div className='lg:flex items-center gap-6 mt-[67px] text-start'>
                 {
-                    plansInfo.map(info => <>
+                    plansInfo.map((info, i) => <div key={i}>
                         <div className='bg-[#282A37] pl-[30px] py-[30px] pr-[50px] rounded-[15px] lg:w-[330px] mt-5 lg:mt-0'>
                             <h5>{info.planName} Plan</h5>
                             <h5 className={`${outfit.className} text-lg leading-[23px] mt-8`}><span className='font-semibold text-[42px] leading-[48px]'>${info.price}</span>/month</h5>
@@ -59,7 +59,7 @@ const Plans = () => {
                             </div>
                             <button className='gradient-hover py-[13.5px] border border-[#12141D] hover:border-none rounded-[10px] font-bold leading-7 mt-[30px] w-full'>Get Started</button>
                         </div>
-                    </>)
+                    </div>)
                 }
             </div>
         </div>

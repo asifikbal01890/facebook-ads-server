@@ -59,9 +59,9 @@ const ExcitingTools = () => {
         <div className='mt-12 lg:mt-[153px]'>
             <div className='text-center'>
                 <h1 className={`${outfit.className} text-2xl lg:text-[42px] lg:leading-[48px] font-semibold`}>54 exciting writing tools</h1>
-                <p className='mt-[26px] text-[#FAFAFA]/[0.7] text-lg max-w-[524px] mx-auto'>AI engines take information from various sources and read them like a human would do.</p>
+                <p className='mt-[26px] text-[#FAFAFA]/[0.7] text-lg max-w-[524px] mx-5 lg:mx-auto'>AI engines take information from various sources and read them like a human would do.</p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[26px] lg:w-[1294px] mx-auto mt-6 lg:mt-[61px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[26px] lg:w-[1294px] mx-5 lg:mx-auto mt-6 lg:mt-[61px]'>
                 {
                     toolsInfo.map(info =>
                         <>

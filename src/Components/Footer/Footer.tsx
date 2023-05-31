@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='pt-[93px] pb-[85px] lg:w-[1258px] mx-auto'>
+        <div className='pt-[93px] pb-[85px] lg:w-[1258px] mx-5 lg:mx-auto'>
             <div className='lg:flex items-center justify-between'>
                 <section>
                     <h3 className='font-semibold leading-[28px]'>Company</h3>

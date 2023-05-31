@@ -80,7 +80,7 @@ const CustomersSay = () => {
     return (
         <div className='customer-say-bg w-full text-center'>
             <h1 className={`${outfit.className} text-[42px] leading-[48px] font-semibold mt-[88px]`}>What our customers say</h1>
-            <p className='w-[461px] mx-auto text-lg leading-7 text-[#FAFAFA]/[0.7] mt-[19px]'>Read why thousands of marketers, writers, and entrepreneurs love us so much.</p>
+            <p className='lg:w-[461px] mx-auto text-lg leading-7 text-[#FAFAFA]/[0.7] mt-[19px]'>Read why thousands of marketers, writers, and entrepreneurs love us so much.</p>
             <div className='lg:w-[1296px] mx-auto mt-[81px] grid grid-cols-1 lg:grid-cols-4 gap-x-6'>
                 <div className='h-fit'>
                     {
@@ -120,6 +120,7 @@ const CustomersSay = () => {
                     }
                 </div>
             </div>
+            <p className='h-[1px] border border-[#252835] w-screen mt-[93px]'></p>
         </div>
     );
 };

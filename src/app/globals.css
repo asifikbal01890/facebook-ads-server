@@ -24,6 +24,10 @@ body {
 }
 
 .gradient-hover:hover {
+  background: linear-gradient(94.25deg, #5C7FFF 0%, #CB5CFF 100%);
+}
+
+.gradient-hover:active {
   background: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
 }
 

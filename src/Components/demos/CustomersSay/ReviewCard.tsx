@@ -16,7 +16,7 @@ interface ChildComponentProps {
 
 const ReviewCard:  React.FC<ChildComponentProps> = ({info}) => {
     return (
-        <div className='px-[21px] h-fit py-[25px] bg-[#FFFFFF] rounded-[5px] text-[#12141D] mb-[28px]'>
+        <div className='pl-[20px] pr-[28px] py-[25px] bg-[#FFFFFF] rounded-[5px] text-[#12141D] mb-[27px]'>
             <div className='flex items-start justify-between'>
                 <div className='flex items-center gap-[11px]'>
                     <Image src={info.photo} alt='' />
@@ -28,7 +28,7 @@ const ReviewCard:  React.FC<ChildComponentProps> = ({info}) => {
                 <p className='text-[17.53px] text-[#0EA5E9]'><AiOutlineTwitter></AiOutlineTwitter></p>
             </div>
             <div className='text-start mt-[25px]'>
-                <p >{info.review}</p>
+                <p className='text-base leading-6'>{info.review}</p>
                 <p className='text-[#0EA5E9]'>{info.hashTag}</p>
             </div>
         </div>

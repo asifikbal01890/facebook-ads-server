@@ -9,6 +9,8 @@ import marvin from '../../../../public/img/customersSayImg/marvin.png';
 import annette from '../../../../public/img/customersSayImg/annette.png';
 import floyd from '../../../../public/img/customersSayImg/floyd.png';
 import ReviewCard from './ReviewCard';
+import Image from 'next/image';
+import { AiOutlineTwitter } from 'react-icons/ai';
 
 
 const outfit = Outfit({ subsets: ['latin'] })
@@ -44,7 +46,7 @@ const CustomersSay = () => {
             review: "With Postcrafts, it’s quicker with the customer, the customer is more ensured of getting exactly what they ordered, and I’m all for the efficiency.",
             hashTag: "#dev #tools"
         },
-        
+
         {
             name: "Jenny Wilson",
             userName: "@jennywilson",
@@ -80,32 +82,41 @@ const CustomersSay = () => {
             <h1 className={`${outfit.className} text-[42px] leading-[48px] font-semibold mt-[88px]`}>What our customers say</h1>
             <p className='w-[461px] mx-auto text-lg leading-7 text-[#FAFAFA]/[0.7] mt-[19px]'>Read why thousands of marketers, writers, and entrepreneurs love us so much.</p>
             <div className='lg:w-[1296px] mx-auto mt-[81px] grid grid-cols-1 lg:grid-cols-4 gap-x-6'>
-                <div>
+                <div className='h-fit'>
                     {
-                        customersInfo.slice(0,2).map((info, i) => {
-                            return <ReviewCard key={i} info={info} />
-                        })
+                        customersInfo.slice(0, 2).map((info, i) => <ReviewCard key={i} info={info} />)
                     }
                 </div>
-                <div>
+                <div className='h-fit'>
                     {
-                        customersInfo.slice(2,4).map((info, i) => {
-                            return <ReviewCard key={i} info={info} />
-                        })
+                        customersInfo.slice(2, 4).map((info, i) => <ReviewCard key={i} info={info} />)
                     }
                 </div>
-                <div>
+                <div className='h-fit'>
                     {
-                        customersInfo.slice(4,6).map((info, i) => {
-                            return <ReviewCard key={i} info={info} />
-                        })
+                        customersInfo.slice(4, 6).map((info, i) => <ReviewCard key={i} info={info} />)
                     }
                 </div>
-                <div>
+                <div className='h-fit'>
                     {
-                        customersInfo.slice(6,8).map((info, i) => {
-                            return <ReviewCard key={i} info={info} />
-                        })
+                        customersInfo.slice(6, 8).map((info, i) => <>
+                            <div className='pl-[22px] pr-[12px] py-[25px] bg-[#FFFFFF] rounded-[5px] text-[#12141D] mb-[27px]'>
+                                <div className='flex items-start justify-between'>
+                                    <div className='flex items-center gap-[11px]'>
+                                        <Image src={info.photo} alt='' />
+                                        <div className='text-start'>
+                                            <h5 className='font-semibold'>{info.name}</h5>
+                                            <small>{info.userName}</small>
+                                        </div>
+                                    </div>
+                                    <p className='text-[17.53px] text-[#0EA5E9] pr-[9px]'><AiOutlineTwitter></AiOutlineTwitter></p>
+                                </div>
+                                <div className='text-start mt-[25px]'>
+                                    <p className='text-base leading-6'>{info.review}</p>
+                                    <p className='text-[#0EA5E9]'>{info.hashTag}</p>
+                                </div>
+                            </div>
+                        </>)
                     }
                 </div>
             </div>

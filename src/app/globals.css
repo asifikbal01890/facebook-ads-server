@@ -23,6 +23,10 @@ body {
   background: rgba(18, 20, 29, 1)
 }
 
+.gradient-bg {
+  background: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
+}
+
 .gradient-hover:hover {
   background: linear-gradient(94.25deg, #5C7FFF 0%, #CB5CFF 100%);
 }

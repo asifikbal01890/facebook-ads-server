@@ -39,7 +39,7 @@ const Plans = () => {
 
 
     return (
-        <div className='mt-[88px] text-center'>
+        <div className='mt-[88px] text-center mb-[48px]'>
             <h1 className={`${outfit.className} font-semibold text-2xl lg:text-[42px] lg:leading-[48px]`}>Make the wise decision for <br /> your business</h1>
             <p className='text-lg text-[#FAFAFA]/[0.7] mt-5'>Choose from our affordable 3 packages</p>
             <div className='lg:flex items-center gap-6 mt-[67px] text-start'>

@@ -9,7 +9,7 @@ const outfit = Outfit({ subsets: ['latin'] })
 
 const Results = () => {
     return (
-        <div className=' mt-12 lg:mt-[171.49px] lg:w-[1192px] mx-5 xl:mx-auto text-center lg:text-start'>
+        <div className=' mt-12 lg:mt-[171.49px] lg:w-[1192px] xl:mx-auto text-center lg:text-start'>
             <div className='lg:flex items-center justify-between lg:w-[1121px]'>
                 <div className=' relative w-full'>
                     <Image src={imgOne} alt='' />

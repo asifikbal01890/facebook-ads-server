@@ -23,9 +23,9 @@ const HeroSection = () => {
             <div className='flex justify-center'>
                 <button className='gradient-outline-btn py-[6.5px] px-[38px] mt-[13px] flex items-center gap-[11.8px]'><MdPlayCircle></MdPlayCircle>Watch A Demo</button>
             </div>
-            {/* <Ellipses></Ellipses>+
+            <Ellipses></Ellipses>
             <EllipseTwo></EllipseTwo>
-            <EllipseThree></EllipseThree> */}
+            <EllipseThree></EllipseThree>
         </div>
     );
 };

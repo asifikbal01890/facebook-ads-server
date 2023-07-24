@@ -1,3 +1,5 @@
+'use client'
+
 import Customers from '@/Components/demos/Customers/Customers'
 import ExcitingTools from '@/Components/demos/ExcitingTools/ExcitingTools'
 import HeroSection from '@/Components/demos/HeroSection/HeroSection'
